@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon" />
+    <title>Sheila Onyango</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <nav class="site-header">
+      <h1>Sheila Onyango</h1>
+        <ul class="navigation">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="file:///Users/s2400243/Desktop/Portfolio_Project_Final/gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contacts</a></li>
+          <li>
+            <a href="https://en.bc.fi/ " class="nav-link">More About BCH</a>
+          </li>
+        </ul>
+      </div>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+    </nav>
+
+    <!-- Hero Banner Section -->
+    <section class="hero-banner">
+      <div class="hero-content">
+        <h2 class="name">Sheila Onyango</h2>
+        <h1 class="welcome-text">Hello, Welcome to my Portfolio!</h1>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+      <img
+        src="Images/Aboutme.png"
+        alt="Sheila"
+        loading="lazy"
+        class="about-img"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About</h2>
+        <p class="bio-text">
+          I am an aspiring web developer and currently a Full Stack Web
+          Developer student. Though I am new to the world of coding, I am eager
+          to learn and grow my skills in this field. Every line of code I write
+          is an opportunity to explore, experiment and grow. I'm excited to take
+          this path of discovery and creativity. Join me as I take my first
+          steps into the world of web development!
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="Images/htmlskills.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="Images/cssskills.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="Images/JS skills.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="Images/ux-ui.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="Images/php.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="Images/salesforce-skills.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="Images/myportfoliowebsite.jpeg"
+            alt="portfolio"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">My Portfolio Website</h3>
+          <p class="project-details">
+            This is my very first project in my quest to becoming a web
+            developer. I hope you enjoy exploring it.
+          </p>
+          <a href="#" target="_blank" class="project-link">Read more</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="Images/todolist.jpeg"
+            alt="todolist"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">To-Do List</h3>
+          <p class="project-details">
+            This is an efficient task management app for daily productivity
+            goals.
+          </p>
+          <a href="#" target="_blank" class="project-link">Read more</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="Images/recipe.jpeg"
+            alt="recipe"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Recipe App</h3>
+          <p class="project-details">
+            Organize and discover recipes for culinary adventures using the app!
+          </p>
+          <a href="#" target="_blank" class="project-link">Read more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Contact Me!</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylnggw" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                placeholder="Message"
+                cols="60"
+                rows="10"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <i class="scroll-up" id="scroll-up"
+      ><img src="Images/BackToTop.png" class="socicon up-arrow" alt="scroll-up"
+    /></i>
+
+    <!-- Footer section -->
+    <footer>
+      <p class="copy">&copy; Copyright 2024</p>
+      <p class="copy">Sheila Onyango</p>
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="script.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
