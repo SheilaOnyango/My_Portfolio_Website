@@ -48,7 +48,7 @@ body {
 
 .hero-banner {
   height: 70vh;
-  background-image: url("Images/Background\ img.jpg");
+  background-image: url("Background\ img.jpg");
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -498,4 +498,7 @@ h2 {
     grid-column-start: span 3;
     grid-row-start: span 3;
   }
+}
+.text {
+  color: #0000ff;
 }
